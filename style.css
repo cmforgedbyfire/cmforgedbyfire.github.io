@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    padding: 30px 10px;
+    padding: 30px 10px 15px 10px;
     border-bottom: 2px solid var(--teal);
 }
 
@@ -35,8 +35,33 @@ h1 {
     color: var(--gray);
 }
 
+/* Simple nav bar */
+.nav {
+    margin-top: 15px;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 6px 10px;
+    color: var(--gray);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    background: #1f2933;
+    color: var(--light);
+}
+
+.nav-link.active {
+    background: var(--teal);
+    color: #020617;
+}
+
 .hero {
-    padding: 40px 20px;
+    padding: 40px 20px 30px 20px;
 }
 
 .download-btn {
@@ -102,11 +127,42 @@ h1 {
     color: var(--gray);
 }
 
+/* Generic page sections (Coming Soon / About) */
+.page-section {
+    padding: 40px 20px 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.roadmap ul {
+    list-style: none;
+    padding: 0;
+}
+
+.roadmap li {
+    padding: 6px 0;
+    font-size: 1rem;
+    color: var(--light);
+}
+
+.about-block {
+    margin: 15px 0;
+    line-height: 1.5;
+    color: var(--light);
+}
+
 footer {
     margin-top: 40px;
     padding: 20px;
     font-size: 0.9rem;
     color: var(--gray);
+    border-top: 1px solid #202020;
 }
 
 footer a {
@@ -130,7 +186,13 @@ footer a:hover {
     }
 
     .features li,
-    .whats-new li {
+    .whats-new li,
+    .roadmap li,
+    .about-block {
         font-size: 0.95rem;
+    }
+
+    .page-section {
+        padding: 30px 15px 40px 15px;
     }
 }
