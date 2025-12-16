@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Downloads – PC Purifier</title>
-    <meta name="description" content="Download the latest version of PC Purifier and browse older releases.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="pcpurifier.png">
+  <title>Downloads — PC Purifier</title>
+  <meta name="description" content="Download PC Purifier and browse the release archive." />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="pcpurifier.png" />
 </head>
+
 <body>
-    <header>
-        <img src="pcpurifier.png" alt="PC Purifier logo" class="logo">
-        <h1>PC Purifier</h1>
-        <p class="tagline">Downloads & Versions</p>
+  <header class="site-header">
+    <div class="brand-row">
+      <img src="pcpurifier.png" alt="PC Purifier logo" class="brand-logo brand-logo-square" />
+      <div class="brand-text">
+        <h1 class="brand-title">Downloads</h1>
+        <p class="brand-subtitle">PC Purifier • Forged By Fire Software LLC</p>
+      </div>
+    </div>
 
-        <nav class="nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="downloads.html" class="nav-link active">Downloads</a>
-            <a href="comingsoon.html" class="nav-link">Coming Soon</a>
-            <a href="about.html" class="nav-link">About Me</a>
-        </nav>
-    </header>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="pcpurifier.html" class="nav-link">PC Purifier</a>
+      <a href="downloads.html" class="nav-link active">Downloads</a>
+      <a href="comingsoon.html" class="nav-link">Roadmap</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+  </header>
 
-    <section class="page-section">
-        <h2>Latest Version (Recommended)</h2>
-        <p>The most up-to-date build of PC Purifier with the newest tools and fixes.</p>
+  <main class="page">
+    <section class="section">
+      <h2 class="section-title">Latest (Recommended)</h2>
+      <p class="muted">
+        Download the newest build from GitHub Releases.
+      </p>
 
-        <p><strong>Version:</strong> 1.2.0 – Free Edition</p>
-        <p><strong>Platform:</strong> Windows 10 & Windows 11</p>
-
-        <a class="download-btn"
+      <div class="cta-row">
+        <a class="btn btn-primary"
            href="https://github.com/cmforgedbyfire/cmforgedbyfire.github.io/releases/latest/download/PCPurifierSetup.exe">
-           ⬇ Download PC Purifier v1.2.0
+          ⬇ Download (Latest)
         </a>
+        <a class="btn btn-ghost"
+           href="https://github.com/cmforgedbyfire/cmforgedbyfire.github.io/releases"
+           target="_blank" rel="noopener">
+          View all releases on GitHub
+        </a>
+      </div>
 
-        <div class="security-note">
-            <strong>ℹ️ Windows SmartScreen Notice</strong>
-            <p>
-                PC Purifier is currently unsigned while we complete publisher verification
-                and code-signing certification.
-            </p>
-            <p>
-                Windows may show a SmartScreen warning.
-                Click <strong>More info → Run anyway</strong> to install.
-            </p>
-        </div>
-
-        <hr style="margin: 40px 0; border-color: #202020;">
-
-        <h2>Release Archive</h2>
-        <p>Older versions are preserved on GitHub with full notes and installers.</p>
-
-        <ul class="download-list">
-            <li>
-                <strong>1.2.0 – Free Edition</strong><br>
-                <span class="download-meta">Lifetime space counter, UI upgrades, Shield improvements.</span>
-                <a href="https://github.com/cmforgedbyfire/cmforgedbyfire.github.io/releases/tag/v1.2.0" target="_blank">
-                    View 1.2.0 release on GitHub
-                </a>
-            </li>
-        </ul>
+      <div class="note security-note">
+        <strong>ℹ️ Windows SmartScreen Notice</strong>
+        <p>
+          PC Purifier may show a SmartScreen warning while publisher verification and code signing are in progress.
+          To install: <strong>More info → Run anyway</strong>.
+        </p>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2025 cmforgedbyfire.com – Forged By Fire Software. All Rights Reserved.</p>
-        <p><a href="mailto:cmforgedbyfire@protonmail.com">Support: cmforgedbyfire@protonmail.com</a></p>
-    </footer>
+    <section class="section">
+      <h2 class="section-title">Release Archive</h2>
+      <p class="muted">
+        Add each release here so the Downloads page never “loses” old versions again.
+      </p>
+
+      <ul class="download-list">
+        <li>
+          <strong>v1.3.0 — Free Edition</strong><br />
+          <span class="download-meta">Privacy tab launch (new pillar) + polish/fixes.</span>
+          <a href="https://github.com/cmforgedbyfire/cmforgedbyfire.github.io/releases/tag/v1.3.0" target="_blank" rel="noopener">
+            View v1.3.0 on GitHub
+          </a>
+        </li>
+
+        <li>
+          <strong>v1.2.0 — Free Edition</strong><br />
+          <span class="download-meta">UI upgrades, Shield improvements, lifetime counter.</span>
+          <a href="https://github.com/cmforgedbyfire/cmforgedbyfire.github.io/releases/tag/v1.2.0" target="_blank" rel="noopener">
+            View v1.2.0 on GitHub
+          </a>
+        </li>
+      </ul>
+
+      <p class="muted small-top">
+        If you have older tags (example: v1.1.0 / v1.0.0), paste them into this same list and they’ll stay visible forever.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 cmforgedbyfire.com — Forged By Fire Software LLC. All Rights Reserved.</p>
+    <p><a href="mailto:cmforgedbyfire@protonmail.com">Support: cmforgedbyfire@protonmail.com</a></p>
+  </footer>
 </body>
 </html>
