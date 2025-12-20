@@ -204,6 +204,78 @@ main{display:block}
   margin-top: 14px;
 }
 
+.project-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.project-card{
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.project-image{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.project-body{
+  padding: 16px;
+}
+
+.project-gallery{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0 16px 16px 16px;
+}
+
+.project-shot{
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0e1116;
+}
+
+.project-shot img{
+  width: 100%;
+  display: block;
+}
+
+.project-kicker{
+  margin: 0 0 6px 0;
+  color: var(--ember);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .72rem;
+}
+
+.project-title{
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.project-subtitle{
+  margin: 0 0 12px 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.feature-list{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .card{
   background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
   border: 1px solid rgba(255,255,255,.08);
@@ -250,6 +322,32 @@ main{display:block}
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   margin-top: 14px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.shot{
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.shot img{
+  width: 100%;
+  display: block;
+}
+
+.shot-caption{
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: .95rem;
 }
 
 .panel{
@@ -325,6 +423,9 @@ main{display:block}
 
 @media (max-width: 900px){
   .cards{grid-template-columns: 1fr}
+  .project-grid{grid-template-columns: 1fr}
   .grid{grid-template-columns: 1fr}
+  .gallery{grid-template-columns: 1fr}
+  .project-gallery{grid-template-columns: 1fr}
   .hero h2{font-size: 1.65rem}
 }
