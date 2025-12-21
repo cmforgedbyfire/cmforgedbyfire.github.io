@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Services - Forged By Fire Software LLC</title>
+  <meta name="description" content="Request custom software, AI tools, environments, or remote IT support from Forged By Fire Software LLC." />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="forgedbyfire.jpg" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand-row">
+      <img src="forgedbyfire.jpg" alt="Forged By Fire Software LLC logo" class="brand-logo" />
+      <div class="brand-text">
+        <h1 class="brand-title">Services</h1>
+        <p class="brand-subtitle">Custom software   AI tools   Remote IT</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="pcpurifier.html" class="nav-link">PC Purifier</a>
+      <a href="downloads.html" class="nav-link">Downloads</a>
+      <a href="comingsoon.html" class="nav-link">Roadmap</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <h2 class="section-title">Order Custom Software</h2>
+      <p class="muted">
+        Tell us what you need and we will reply with cost and timeline options.
+        No work starts until payment is received, and the timeline begins after payment.
+      </p>
+
+      <div class="panel">
+        <form id="serviceForm" class="service-form">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label for="company">Company (optional)</label>
+              <input id="company" name="company" type="text" placeholder="Company or studio" />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@email.com" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="text" placeholder="Best number to reach you" />
+            </div>
+            <div class="form-field">
+              <label for="type">Project type</label>
+              <select id="type" name="type" required>
+                <option value="">Choose one</option>
+                <option>Remote IT support</option>
+                <option>Small contract (1-2 weeks)</option>
+                <option>Code job (feature or fix)</option>
+                <option>AI tool / automation</option>
+                <option>Custom environment setup</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="budget">Budget range</label>
+              <select id="budget" name="budget" required>
+                <option value="">Select range</option>
+                <option>$100 - $300</option>
+                <option>$300 - $800</option>
+                <option>$800 - $2,000</option>
+                <option>$2,000 - $5,000</option>
+                <option>$5,000+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="timeline">Timeline</label>
+              <select id="timeline" name="timeline" required>
+                <option value="">Select timeline</option>
+                <option>ASAP</option>
+                <option>1-2 weeks</option>
+                <option>2-4 weeks</option>
+                <option>1-3 months</option>
+                <option>Flexible</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="environment">Environment</label>
+              <select id="environment" name="environment">
+                <option value="">Not sure</option>
+                <option>Windows</option>
+                <option>Linux</option>
+                <option>Mac</option>
+                <option>Mixed</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="model">AI model preference</label>
+              <select id="model" name="model">
+                <option value="">No preference</option>
+                <option>Local only (Qwen/DeepSeek/Phi)</option>
+                <option>Open to hosted models</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="contact">Preferred contact</label>
+              <select id="contact" name="contact">
+                <option>Email</option>
+                <option>Phone</option>
+                <option>Either</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="details">Project details</label>
+            <textarea id="details" name="details" rows="6" placeholder="Tell us what you want built, key goals, and any constraints." required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary" onclick="sendServiceRequest()">Send request</button>
+            <span class="muted">Opens your email client with the details pre-filled.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>c 2025 cmforgedbyfire.com - Forged By Fire Software LLC. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function sendServiceRequest() {
+      var form = document.getElementById('serviceForm');
+      var fields = [
+        ['Name', form.name.value],
+        ['Company', form.company.value],
+        ['Email', form.email.value],
+        ['Phone', form.phone.value],
+        ['Project type', form.type.value],
+        ['Budget', form.budget.value],
+        ['Timeline', form.timeline.value],
+        ['Environment', form.environment.value],
+        ['Model preference', form.model.value],
+        ['Preferred contact', form.contact.value],
+        ['Details', form.details.value]
+      ];
+
+      var body = fields.map(function(item) {
+        return item[0] + ': ' + (item[1] || '-');
+      }).join('\\n');
+
+      var subject = 'Service Request - ' + (form.type.value || 'Custom Project');
+      var mailto = 'mailto:cmforgedbyfire@protonmail.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
+
+      window.location.href = mailto;
+    }
+  </script>
+</body>
+</html>
