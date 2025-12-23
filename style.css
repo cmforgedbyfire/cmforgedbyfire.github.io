@@ -344,6 +344,40 @@ main{display:block}
   display: block;
 }
 
+.shot img,
+.project-shot img{
+  cursor: zoom-in;
+}
+
+#img-lightbox-overlay{
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#img-lightbox-overlay.open{
+  display: flex;
+}
+
+.lightbox-backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.8);
+}
+
+.lightbox-image{
+  position: relative;
+  max-width: 92vw;
+  max-height: 92vh;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,.12);
+  background: #0e1116;
+}
+
 .shot-caption{
   padding: 10px 12px;
   color: var(--muted);
@@ -481,6 +515,10 @@ main{display:block}
   .grid{grid-template-columns: 1fr}
   .gallery{grid-template-columns: 1fr}
   .project-gallery{grid-template-columns: 1fr}
+  .form-grid{grid-template-columns: 1fr}
+  .hero h2{font-size: 1.65rem}
+}
+
   .form-grid{grid-template-columns: 1fr}
   .hero h2{font-size: 1.65rem}
 }
