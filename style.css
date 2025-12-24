@@ -300,6 +300,13 @@ main{display:block}
   padding: 10px;
 }
 
+.downloads-logo{
+  width: 96px;
+  height: 96px;
+  border-radius: 18px;
+  padding: 12px;
+}
+
 .badge-icon{
   width: 54px;
   height: 54px;
@@ -515,10 +522,6 @@ main{display:block}
   .grid{grid-template-columns: 1fr}
   .gallery{grid-template-columns: 1fr}
   .project-gallery{grid-template-columns: 1fr}
-  .form-grid{grid-template-columns: 1fr}
-  .hero h2{font-size: 1.65rem}
-}
-
   .form-grid{grid-template-columns: 1fr}
   .hero h2{font-size: 1.65rem}
 }
