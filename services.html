@@ -13,23 +13,25 @@
 
 <body>
   <header class="site-header">
-    <div class="brand-row">
-      <img src="forgedbyfire.jpg" alt="Forged By Fire Software LLC logo" class="brand-logo" />
-      <div class="brand-text">
-        <h1 class="brand-title">Services</h1>
-        <p class="brand-subtitle">Custom software   AI tools   Remote IT</p>
+    <div class="container">
+      <div class="brand-row">
+        <img src="forgedbyfire.jpg" alt="Forged By Fire Software LLC logo" class="brand-logo" />
+        <div class="brand-text">
+          <h1 class="brand-title">Services</h1>
+          <p class="brand-subtitle">Custom software - AI tools - Remote IT</p>
+        </div>
       </div>
-    </div>
 
-    <nav class="nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="pcpurifier.html" class="nav-link">PC Purifier</a>
-      <a href="shipstudio.html" class="nav-link">Ship Studio</a>
-      <a href="downloads.html" class="nav-link">Downloads</a>
-      <a href="comingsoon.html" class="nav-link">Roadmap</a>
-      <a href="services.html" class="nav-link active">Services</a>
-      <a href="about.html" class="nav-link">About</a>
-    </nav>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="pcpurifier.html" class="nav-link">PC Purifier</a>
+        <a href="shipstudio.html" class="nav-link">Ship Studio</a>
+        <a href="downloads.html" class="nav-link">Downloads</a>
+        <a href="comingsoon.html" class="nav-link">Roadmap</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+    </div>
   </header>
 
   <main class="page">
@@ -172,13 +174,15 @@
   </main>
 
   <footer class="footer">
-    <p>c 2025 cmforgedbyfire.com - Forged By Fire Software LLC. All Rights Reserved.</p>
-  <form action="https://www.paypal.com/donate" method="post" target="_top">
-  <input type="hidden" name="hosted_button_id" value="2VRFMADCKZLRU" />
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
-</footer>
+    <div class="footer-inner container">
+      <p>&copy; 2025 cmforgedbyfire.com - Forged By Fire Software LLC. All rights reserved.</p>
+      <form class="donate-form" action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="2VRFMADCKZLRU" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+    </div>
+  </footer>
 
   <script>
     function sendServiceRequest() {
@@ -200,7 +204,7 @@
 
       var body = fields.map(function(item) {
         return item[0] + ': ' + (item[1] || '-');
-      }).join('\\n');
+      }).join('\n');
 
       var subject = 'Service Request - ' + (form.type.value || 'Custom Project');
       var mailto = 'mailto:cmforgedbyfire@protonmail.com'
