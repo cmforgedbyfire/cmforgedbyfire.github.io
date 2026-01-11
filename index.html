@@ -6,6 +6,20 @@
 
   <title>Forged By Fire Software LLC - Security-first utilities</title>
   <meta name="description" content="Forged By Fire Software LLC builds security-first utilities that help you clean, optimize, protect, and understand your PC." />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cmforgedbyfire.com/" />
+  <meta property="og:title" content="Forged By Fire Software LLC - Security-first utilities" />
+  <meta property="og:description" content="Security-first utilities that help regular people keep control of their computers. PC Purifier, Ship Studio, and more." />
+  <meta property="og:image" content="https://cmforgedbyfire.com/assets/logos/forgedbyfire.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://cmforgedbyfire.com/" />
+  <meta property="twitter:title" content="Forged By Fire Software LLC - Security-first utilities" />
+  <meta property="twitter:description" content="Security-first utilities that help regular people keep control of their computers. PC Purifier, Ship Studio, and more." />
+  <meta property="twitter:image" content="https://cmforgedbyfire.com/assets/logos/forgedbyfire.jpg" />
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/x-icon" href="assets/icons/the_forge.ico" />
@@ -17,7 +31,8 @@
   <link rel="icon" type="image/png" sizes="256x256" href="assets/icons/the_forge-256.png" />
 </head>
 
-<body>
+<body data-trail='sparkle'>
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
   <header class="site-header">
     <div class="container">
       <div class="brand-row">
@@ -28,7 +43,11 @@
         </div>
       </div>
 
-                  <nav class="nav">
+                  <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <div class="nav-menu">
         <a href="index.html" class="nav-link active">Home</a>
         <a href="pcpurifier.html" class="nav-link">PC Purifier</a>
         <a href="shipstudio.html" class="nav-link">Ship Studio</a>
@@ -38,11 +57,12 @@
         <a href="comingsoon.html" class="nav-link">Roadmap</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="about.html" class="nav-link">About</a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main-content">
     <section class="hero hero-foundry">
       <div class="hero-inner">
         <h2>Security-first utilities, forged with clarity and precision.</h2>
@@ -86,7 +106,7 @@
           <div class="card-actions">
             <a class="btn btn-primary" href="pcpurifier.html">Product page</a>
             <a class="btn btn-ghost" href="downloads.html">Download</a>
-          <a class="btn btn-ghost" href="https://www.paypal.com/ncp/payment/LC7WFT638D2EY" target="_blank" rel="noopener">Buy Pro ($7.99 one-time)</a>
+          <p style="color:#ff6b35;font-weight:600;">100% FREE - #because_Jesus</p>
           </div>
         </article>
 
@@ -108,9 +128,27 @@
             <a class="btn btn-ghost" href="comingsoon.html">See roadmap</a>
             <a class="btn btn-ghost" href="comingsoon.html#ship-studio">Ship Studio preview</a>
             <a class="btn btn-ghost" href="shipstudio.html">Ship Studio page</a>
-            <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/UM4WSGRL46YTG" target="_blank" rel="noopener">Buy Ship Studio ($7.99)</a>
+            <p style="color:#ff6b35;font-weight:600;">100% FREE - #because_Jesus</p>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title">What users are saying</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p class="testimonial-quote">"PC Purifier cleaned up over 15GB on my old laptop. It's running so much smoother now!"</p>
+          <p class="testimonial-author">— Sarah M.</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-quote">"Love the Privacy Dashboard. Finally I can see which apps are actually using my camera and mic."</p>
+          <p class="testimonial-author">— Mike T.</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-quote">"No bloat, no upsells, just does what it says. Exactly what I needed."</p>
+          <p class="testimonial-author">— Dev Community User</p>
+        </div>
       </div>
     </section>
 
@@ -138,7 +176,7 @@
 
   <footer class="footer">
     <div class="footer-inner container">
-      <p>&copy; 2025 cmforgedbyfire.com - Forged By Fire Software LLC. All rights reserved.</p>
+      <p>&copy; 2026 cmforgedbyfire.com - Forged By Fire Software LLC. All rights reserved.</p>
 
       <div class="visitor-counter">
         <span>Visitors:</span>
@@ -156,8 +194,13 @@
     </div>
   </footer>
   <script src="js/cursor-trail.js"></script>
-</body>
+  <script src="js/mobile-nav.js"></script>
+<script src="js/mouse-trails.js"></script></body>
 </html>
+
+
+
+
 
 
 
