@@ -33,7 +33,7 @@
 
   <main class="page" id="main-content">
     <section class="section">
-      <p class="muted">Last updated: July 29, 2026</p>
+      <p class="muted">Last updated: September 7, 2026</p>
 
       <div class="panel">
         <h2>Our Commitment</h2>
@@ -47,6 +47,7 @@
         <h2>Plain-English Summary</h2>
         <ul class="bullets">
           <li><strong>Most desktop apps are local-first</strong> - PC Purifier, Master Generator, Latterday Lens, and The Forge are designed to keep their main files and settings on your device</li>
+          <li><strong>Creative QR</strong> - QR creation, profiles and exports stay on your device. Optional feedback sends the message, category, optional reply email, app version and Windows platform to us. Read the <a href="#creative-qr">Creative QR privacy details</a></li>
           <li><strong>Some features need permissions</strong> - Card Vault may ask for camera access, V.E.N.T may ask for microphone access, and some apps store local data so they can remember your work</li>
           <li><strong>Some features use the Internet</strong> - Master Generator uses the public TreV gateway for TreV responses and downloads image packs when you choose them; Card Vault uses our Card Vault service and card-data providers for search, price data, accounts, sync, Coach, and optional scan reports; V.E.N.T uses Forged By Fire Software LLC servers for chat, voice transcription, uploads, archives, and AI responses</li>
           <li><strong>Optional uploads are real uploads</strong> - If you submit a Card Vault scan report, V.E.N.T voice note, V.E.N.T attachment, support email, or service request, that content is sent to us or to the service named in this policy</li>
@@ -81,6 +82,19 @@
           <li><strong>No visitor counter</strong> - This website does not currently use a third-party visitor counter badge</li>
           <li><strong>Email forms</strong> - Support and service forms open your email app. Your name, reply email, project details, screenshots, or other message content are sent only when you choose to send the email</li>
           <li><strong>Hosting logs</strong> - GitHub Pages may process normal web request details such as IP address, user agent, request time, and requested URL for security and reliability</li>
+        </ul>
+      </div>
+
+      <div class="panel" id="creative-qr">
+        <h3>Creative QR (Windows Application, v0.1)</h3>
+        <ul class="bullets">
+          <li><strong>Local QR creation</strong> - Website links, contact details, email and SMS drafts, phone numbers, Wi-Fi details and text are processed on your computer to create the code. These contents are not automatically uploaded to Forged By Fire Software LLC. No app account, advertising analytics or install tracking is used.</li>
+          <li><strong>Profiles and presets</strong> - Business/profile details and website presets you choose to save stay in the app's local storage. Settings backups are JSON files you export or import yourself.</li>
+          <li><strong>Custom icons</strong> - Images you select are processed locally and held for the current session. They can be included in exported QR images and cards, but are not attached to feedback or saved in profile backups.</li>
+          <li><strong>Saved images and file details</strong> - Exported PNGs are saved in your Windows user app-data workspace. Associated file details include the label, styling, date and exported filename/path, without a separate copy of the encoded QR contents. QR images themselves contain the information you entered; anyone who scans a Wi-Fi code may read its password. Printing, copying or sharing an image sends that selected content to the printer, clipboard or destination you choose.</li>
+          <li><strong>Voluntary feedback</strong> - Only when you press Send feedback, the app sends your message, category, optional reply email, app version and Windows platform over HTTPS to our feedback service. We also record the receipt time and feedback status. The form does not attach QR contents, custom icons, saved profiles or an installation identifier. Anything you type into the message is included. Unsent drafts are held for the current app session and are not automatically retried.</li>
+          <li><strong>Use and storage</strong> - Feedback is stored in our private App Master database so we can respond when an email is supplied, investigate problems and improve Creative QR. It is not a public comment and is not used for advertising. Network addresses are used temporarily in memory to limit abusive submissions. Our service and hosting providers may process connection details for delivery and security; see the service-provider section below.</li>
+          <li><strong>Your choices</strong> - Feedback is optional. Reset clears the current design; Settings &gt; Clear profile &amp; presets clears saved profile details and presets. Delete saved exports through Saved files or their folder, and remove any settings backups or copies you shared separately. These actions do not delete feedback already submitted. To request feedback access, correction or deletion, contact <a href="mailto:forgedbyfiresoftware@gmail.com">forgedbyfiresoftware@gmail.com</a>. Include Creative QR, the approximate submission date, and enough of the message or reply email to locate it. An anonymous message may be difficult to identify. See <a href="delete-account.html#creative-qr">Creative QR data deletion</a> and Data Retention below.</li>
         </ul>
       </div>
 
@@ -183,6 +197,12 @@
       </div>
 
       <div class="panel">
+        <h3>Creative QR Feedback Delivery and Microsoft Store</h3>
+        <p>Creative QR feedback passes through Cloudflare to our HTTPS service. Cloudflare processes network traffic and connection information, such as IP addresses and request details, to deliver and protect the service. See <a href="https://www.cloudflare.com/policies/privacy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a>. Email support is delivered through our Gmail inbox and your chosen email provider.</p>
+        <p>Microsoft handles Microsoft Store distribution and its own account, download and diagnostic information under <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft's Privacy Statement</a>. Creative QR does not receive your Microsoft account password. Windows, printers and other applications you choose have their own data practices.</p>
+      </div>
+
+      <div class="panel">
         <h3>Master Generator TreV and Image Packs</h3>
         <p>
           Master Generator may contact the public TreV gateway when you ask TreV for help, and may contact the release host when you download map or magic item image packs. Campaign vault saves remain local unless you export and send them yourself.
@@ -236,6 +256,7 @@
           <li><strong>Service inquiries</strong> - Kept for 2 years, then deleted</li>
           <li><strong>License emails</strong> - Kept indefinitely for license recovery support</li>
           <li><strong>Support emails</strong> - Kept for 2 years, then deleted</li>
+          <li><strong>Creative QR in-app feedback</strong> - Kept while needed to investigate the report, provide support and verify improvements. There is currently no automatic expiry for in-app feedback. You may request deletion or de-identification of identifiable feedback through the contact details above. Removing a message from the owner's inbox only hides it; a data-deletion request is handled separately. Limited records may remain when needed for security, legal obligations or backup integrity.</li>
           <li><strong>Card Vault scan reports</strong> - Captured card images and related OCR, search, result, note, and timing details are kept only while useful for reproducing scanner failures, improving recognition, providing support, and verifying fixes. You can request removal of reports tied to your account</li>
           <li><strong>Card Vault accounts and synchronized libraries</strong> - Kept while the account remains active. Verified account deletion requests delete or de-identify account records and synchronized collection, deck, and preference records except limited records needed for security, support, legal compliance, or backup integrity</li>
           <li><strong>V.E.N.T account, chat, voice, upload, archive, and server records</strong> - Kept while needed to provide the app, maintain continuity, support users, debug problems, prevent abuse, and satisfy legal or operational requirements. Some in-app deletes are soft deletes so the Recovery area can restore deleted Threads or Heart memories; account deletion requests are the path for deleting or de-identifying account data</li>
